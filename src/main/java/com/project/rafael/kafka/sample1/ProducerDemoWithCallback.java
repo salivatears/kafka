@@ -25,7 +25,7 @@ public class ProducerDemoWithCallback {
 
         for (int i=0; i<10; i++) {
             //create producer record
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("first_topic", "Hellow World" + Integer.toString(i));
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("DBS_Topic", "Hello World DBS_" + Integer.toString(i));
 
             //send data - asyc
             producer.send(record, new Callback() {

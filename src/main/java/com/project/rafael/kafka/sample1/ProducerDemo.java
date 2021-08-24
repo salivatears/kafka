@@ -9,7 +9,6 @@ import java.util.Properties;
 
 public class ProducerDemo {
     public static void main(String[] args) {
-        //System.out.println("Hello World");
         //create producer properties
         String bootstrapServers = "127.0.0.1:9092";
         Properties properties = new Properties();
